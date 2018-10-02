@@ -35,6 +35,11 @@ function [depth_map_in_meters, is_depth_invalid] =...
 %   corresponding pixel in |depth_map_in_meters| certainly contains a erroneous
 %   value.
 
+% Suppress the nearly singular matrix warning, which otherwise occurs during
+% RANSAC plane fitting.
+warning_state = warning;
+warning('off', 'MATLAB:nearlySingularMatrix');
+
 % Input the required data.
 [depth_input, is_depth_input_invalid] =...
     depth_in_meters_cityscapes_with_invalid_parts(input_disparity,...
@@ -285,6 +290,9 @@ end
 % completion has not worked correctly for that segment.
 wrong_segments_ids = unique(S_L(depth_map_in_meters <= 0));
 is_depth_invalid = ismember(S_L, wrong_segments_ids);
+
+% Restore initial warning settings.
+warning(warning_state);
 
 end
 

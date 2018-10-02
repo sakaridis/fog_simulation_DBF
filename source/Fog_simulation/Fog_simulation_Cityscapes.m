@@ -30,8 +30,6 @@ function Fog_simulation_Cityscapes(task_id, dataset_split, refinement_level,...
 %    5000 trainvaltest Cityscapes images -> 50 images per task * 100 tasks.
 %    550 trainval refined Cityscapes images -> 11 images per task * 50 tasks.
 
-warning('off');
-
 if ischar(task_id)
     task_id = str2double(task_id);
 end
@@ -281,6 +279,5 @@ switch variant_abbreviation
             cityscapes_output_transmittance_directory, output_format);
 end
 
-warning('on');
 end
 
