@@ -27,7 +27,7 @@ Our fog simulation code is made available for non-commercial use under the licen
 1. [Requirements](#requirements)
 2. [Basic installation](#installation-for-running-the-demo)
 3. [Demo](#demo)
-4. [Beyond the demo: generating *Foggy Cityscapes-DBF*](#beyond-the-demo-running-fog-simulation-to-generate-foggy-cityscapes)
+4. [Beyond the demo: generating *Foggy Cityscapes-DBF*](#beyond-the-demo-running-fog-simulation-to-generate-foggy-cityscapes-dbf)
 5. [References](#references)
 
 
@@ -163,8 +163,8 @@ The above experiment in step 4 uses a single thread and thus runs for around one
 
 ### Contact
 
-Christos Sakaridis
-csakarid[at]vision.ee.ethz.ch
+Christos Sakaridis  
+csakarid[at]vision.ee.ethz.ch  
 https://www.vision.ee.ethz.ch/~csakarid/Model_adaptation_SFSU_dense/
 
 [project_page]: <https://www.vision.ee.ethz.ch/~csakarid/Model_adaptation_SFSU_dense/>
