@@ -16,12 +16,7 @@ function Fog_simulation_Cityscapes(task_id, dataset_split, refinement_level,...
 %   -|variant|: string that indicates the type of fog simulation that is being
 %    run, e.g. 'stereoscopic_inpainting_with_guided_filtering',
 %    'stereoscopic_inpainting_with_dual_range_cross_bilateral_filtering',
-%    'semantic_crossBilateral_filtering',
-%    'dualRange_crossBilateral_filtering', 'nearest_neighbor',
-%    'stereoscopic_inpainting_with_guided_filtering_and_semantic_segment_refinement',
-%    'dualRange_crossBilateral_filtering_with_grayscale_postprocessing',
-%    'piecewise_constant_transmittance_from_semantic_annotations',
-%    'constant_transmittance'.
+%    'nearest_neighbor'.
 %
 %   -|beta|: value of attenuation coefficient that determines fog density.
 %    OR (array of) transmittance value(s) for constant transmittance variants.
