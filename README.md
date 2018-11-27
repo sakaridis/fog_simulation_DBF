@@ -139,12 +139,12 @@ The *Foggy Cityscapes-DBF* dataset is directly available for download at our ded
    cd(FOG_SIMULATION_ROOT);
    cd(fullfile('source', 'Fog_simulation', 'Experiments'));
    ```
-   Run the experiment for generating ***Foggy Cityscapes-refined*** by issuing in the Command Window
+   Run the experiment for generating ***Foggy Cityscapes-DBF-refined*** by issuing in the Command Window
    ```
    Cityscapes_trainval_refined_stereoDBF_beta_0_01_serial;
    ```
    This should create the directory `output/Foggy_Cityscapes-DBF/` and populate it with synthetic foggy images in `leftImg8bit_trainval_refined_stereoBilateralDual_beta_0.01_foggy` as well as corresponding estimated transmittance maps in `leftImg8bit_trainval_refined_stereoBilateralDual_beta_0.01_transmittance` and depth maps in `depth_stereoscopic_trainval_refined`. **Note**: the results of this experiment will occupy around **6 GB of disk space**.\
-   *Foggy Cityscapes-refined* is based on a refined list of 550 Cityscapes images (498 `train` plus 52 `val`) that yield high-quality synthetic foggy images; details are given in our [IJCV publication][sfsu_synthetic_page].
+   *Foggy Cityscapes-DBF-refined* is based on a refined list of 550 Cityscapes images (498 `train` plus 52 `val`) that yield high-quality synthetic foggy images; details are given in our [IJCV publication][sfsu_synthetic_page].
 
 ##### Parallel execution
 
